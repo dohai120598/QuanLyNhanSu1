@@ -112,5 +112,7 @@ namespace QuanLiNhanSu
         {
             load();
         }
+
+        
     }
 }

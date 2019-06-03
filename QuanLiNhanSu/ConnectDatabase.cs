@@ -820,5 +820,26 @@ namespace QuanLiNhanSu
             }
             return "Không tồn tại";
         }
+        //public static void ThemMaNV_ViTri(PhanCong_ViTri p)
+        //{
+        //    string sql = "insert into NhanVien_ViTri(MaVT, MaNV) values(@mavt, @manv)";
+        //    SqlCommand cmd = new SqlCommand(sql, conn);
+        //    using (SqlCommand command = new SqlCommand(sql, conn))
+        //    {
+        //        command.Parameters.Add(new SqlParameter("@mavt", p.MaVT1));
+        //        command.Parameters.Add(new SqlParameter("@manv", p.MaNV1));
+         
+               
+
+        //        int kq = command.ExecuteNonQuery();
+        //        if (kq > 0)
+        //        {
+        //            MessageBox.Show("Thêm mới thành công!");
+        //        }
+        //        else MessageBox.Show("Thêm mới thất bại!");
+        //        command.Cancel();
+        //    }
+
+
+        }
     }
-}
