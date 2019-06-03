@@ -32,6 +32,7 @@
             this.dgvCCPB = new System.Windows.Forms.DataGridView();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.btnHienThi = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCCPB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,12 +85,27 @@
             this.btnHienThi.Text = "Hiển thị";
             this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::QuanLiNhanSu.Properties.Resources.cancel1;
+            this.buttonX1.Location = new System.Drawing.Point(689, 410);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(102, 36);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 64;
+            this.buttonX1.Text = "Thoát";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
             // frmCoCauPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(881, 534);
+            this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.btnHienThi);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.cboPB);
@@ -107,5 +123,6 @@
         private System.Windows.Forms.DataGridView dgvCCPB;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.ButtonX btnHienThi;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
