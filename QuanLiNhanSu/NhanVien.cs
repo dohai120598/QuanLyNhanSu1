@@ -10,8 +10,7 @@ namespace QuanLiNhanSu
     {
         public string Manv { get; set; }
         public string Tennv { get; set; }
-        private string diachi;
-        //private string macv;
+        public string Diachi { get; set; }
         private DateTime ngaysinh;
         private string bangcap;
         private string gt;
@@ -22,18 +21,7 @@ namespace QuanLiNhanSu
         private string cmt;
 
        
-        public string Diachi
-        {
-            get
-            {
-                return diachi;
-            }
-
-            set
-            {
-                diachi = value;
-            }
-        }
+       
 
         //public string Macv
         //{
