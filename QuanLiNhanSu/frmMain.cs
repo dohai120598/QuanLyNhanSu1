@@ -20,7 +20,7 @@ namespace QuanLiNhanSu
         private void chenBang()
         {
             BindingSource soureTB = new BindingSource();
-            soureTB.DataSource = ConnectDatabase.DSNV();
+            soureTB.DataSource = ConnectDatabase.getAllNhanVien();
             dgwTotal.DataSource = soureTB;
         }
         private void colorPickerButton1_SelectedColorChanged(object sender, EventArgs e)

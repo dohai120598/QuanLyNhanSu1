@@ -10,7 +10,7 @@ namespace QuanLiNhanSu
     {
         private string tencv;
         private string macv;
-        private int a;
+      
 
         public string Tencv
         {
@@ -36,6 +36,11 @@ namespace QuanLiNhanSu
             {
                 macv = value;
             }
+        }
+        public ChucVu(string tencv, string macv)
+        {
+            this.Tencv = tencv;
+            this.Macv = macv;
         }
     }
 }
