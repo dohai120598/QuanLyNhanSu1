@@ -37,10 +37,5 @@ namespace QuanLiNhanSu
                 macv = value;
             }
         }
-        public ChucVu(string macv, string tencv)
-        {
-            this.Tencv = tencv;
-            this.Macv = macv;
-        }
     }
 }
