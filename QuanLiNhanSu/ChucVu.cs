@@ -10,6 +10,7 @@ namespace QuanLiNhanSu
     {
         private string tencv;
         private string macv;
+        private int a;
 
         public string Tencv
         {
