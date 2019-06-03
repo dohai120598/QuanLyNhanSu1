@@ -8,8 +8,8 @@ namespace QuanLiNhanSu
 {
     class NhanVien
     {
-        private string manv;
-        private string tennv;
+        public string Manv { get; set; }
+        public string Tennv { get; set; }
         private string diachi;
         //private string macv;
         private DateTime ngaysinh;
@@ -21,33 +21,7 @@ namespace QuanLiNhanSu
         private string sdt;
         private string cmt;
 
-
-        public string Manv
-        {
-            get
-            {
-                return manv;
-            }
-
-            set
-            {
-                manv = value;
-            }
-        }
-
-        public string Tennv
-        {
-            get
-            {
-                return tennv;
-            }
-
-            set
-            {
-                tennv = value;
-            }
-        }
-
+       
         public string Diachi
         {
             get
