@@ -9,21 +9,10 @@ namespace QuanLiNhanSu
     class ChucVu
     {
         private string tencv;
-        private string macv;
+        private string macv{get; set;}
       
 
-        public string Tencv
-        {
-            get
-            {
-                return tencv;
-            }
-
-            set
-            {
-                tencv = value;
-            }
-        }
+        
 
         public string Macv
         {
