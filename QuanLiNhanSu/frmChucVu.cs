@@ -94,9 +94,10 @@ namespace QuanLiNhanSu
 
         private void btnSuaCV_Click(object sender, EventArgs e)
         {
-            ChucVu temp = new ChucVu(txtMaCV.Text, txtTenCV.Text);
+            ChucVu temp = new ChucVu(txtTenCV.Text, txtMaCV.Text);
             ConnectDatabase.SuaChucVu(temp);
             dgvCV.DataSource = ConnectDatabase.getAllChucVu();
+            MessageBox.Show("Sửa chức vụ thành công!!");
         }
 
         private void btnXoaCV_Click(object sender, EventArgs e)

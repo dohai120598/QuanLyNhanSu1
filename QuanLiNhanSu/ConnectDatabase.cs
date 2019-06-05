@@ -534,6 +534,8 @@ namespace QuanLiNhanSu
                 command.Parameters.Add(new SqlParameter("@macv", cv.Macv));
                 command.ExecuteNonQuery();
                 command.Cancel();
+
+              
             }
         }
         public static void SuaChucVu(ChucVu cv)
