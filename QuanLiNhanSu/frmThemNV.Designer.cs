@@ -56,6 +56,7 @@
             this.txtDC = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtGT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThemNV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -74,6 +75,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.buttonX1);
             this.groupBox1.Controls.Add(this.labelX9);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dgvThemNV);
@@ -421,6 +423,20 @@
             this.labelX5.TabIndex = 26;
             this.labelX5.Text = "Địa chỉ";
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::QuanLiNhanSu.Properties.Resources.cancel1;
+            this.buttonX1.Location = new System.Drawing.Point(9, 8);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(72, 24);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 46;
+            this.buttonX1.Text = "Thoát";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
             // frmThemNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,5 +482,6 @@
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTG;
         private DevComponents.DotNetBar.LabelX labelX13;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
