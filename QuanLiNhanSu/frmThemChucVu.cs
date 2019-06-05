@@ -108,7 +108,7 @@ namespace QuanLiNhanSu
         {
             ChucVu temp = new ChucVu(txtMCV.Text, txtTCV.Text);
 
-            if (ConnectDatabase.checkPhongBan(temp.Macv) == 1)
+            if (ConnectDatabase.checkChucVu(temp.Macv) == 1)
             {
                 MessageBox.Show("Mã chức vụ đã tồn tại. Xin mời nhập lại!!!");
                 return;
