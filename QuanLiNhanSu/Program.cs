@@ -21,7 +21,7 @@ namespace QuanLiNhanSu
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormDangNhap());
-            // Application.Run(new frmChucVu());
+            // Application.Run(new frmThemNV());
             //Application.Run(new FrmDanhMuc());
             //  Application.Run(new frmThemPB());
             // Application.Run(new frmPhongBan());

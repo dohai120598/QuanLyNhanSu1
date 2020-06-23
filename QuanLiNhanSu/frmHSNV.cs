@@ -19,7 +19,7 @@ namespace QuanLiNhanSu
             InitializeComponent();
         }
         // SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UJHK73G\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UJHK73G\SQLEXPRESS;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-L72N3QU;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
 
         private void txtTenNV_HSNV_TextChanged(object sender, EventArgs e)
         {

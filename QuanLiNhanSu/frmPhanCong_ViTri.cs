@@ -13,7 +13,7 @@ namespace QuanLiNhanSu
 {   
     public partial class frmPhanCong_ViTri : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UJHK73G\SQLEXPRESS;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-L72N3QU;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
 
         public frmPhanCong_ViTri()
         {

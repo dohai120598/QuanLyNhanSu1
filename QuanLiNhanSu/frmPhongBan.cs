@@ -37,11 +37,8 @@ namespace QuanLiNhanSu
         }
 
         private void btnHienThi_Click(object sender, EventArgs e)
-        {
-
-            
+        {       
             dgvPhongBan.DataSource = ConnectDatabase.getAllPhongBan();
-
         }
 
         private void btnXoaPB_Click(object sender, EventArgs e)

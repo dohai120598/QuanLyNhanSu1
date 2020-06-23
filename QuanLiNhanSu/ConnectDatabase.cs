@@ -14,9 +14,11 @@ namespace QuanLiNhanSu
     class ConnectDatabase
     {
         static SqlConnection conn;
+     
+
         public static void ConnectDB()
         {
-            conn = new SqlConnection(@"Data Source=DESKTOP-UJHK73G\SQLEXPRESS;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=DESKTOP-L72N3QU;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
             conn.Open();
         }
         //SqlCommand sqlcom;
@@ -84,7 +86,6 @@ namespace QuanLiNhanSu
         //----------------------------------PHÒNG BAN-------------------------------------
         public static DataTable getAllPhongBan()
         {
-
             string sql = "select *from PHONGBAN";
             SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
             DataTable dt = new DataTable();
@@ -160,7 +161,7 @@ namespace QuanLiNhanSu
         }
         public static void XoaPhongBan(PhongBan pb)
         {
-            string sql = "DELETE FROM PHONGBAN  where MaPB=@mapb";
+            string sql = "DELETE PHONGBAN  where MaPB=@mapb";
 
             using (SqlCommand command = new SqlCommand(sql, conn))
             {
@@ -364,7 +365,8 @@ namespace QuanLiNhanSu
         }
         public static void XoaNhanVien(NhanVien nv)
         {
-            string sql = "DELETE FROM NHANVIEN  where MaNV=@manv";
+
+            string sql = "DELETE NHANVIEN  where MaNV=@manv";
 
             using (SqlCommand command = new SqlCommand(sql, conn))
             {
@@ -372,7 +374,6 @@ namespace QuanLiNhanSu
                 command.ExecuteNonQuery();
                 command.Cancel();
             }
-
         }
         public static int checkNhanVien(string manv)
         {
@@ -401,7 +402,7 @@ namespace QuanLiNhanSu
         public static DataTable TimKiemLuong_NhanVien(string nv)
         {
 
-            string sql = "select NHANVIEN n,LUONG l where (MaNV like '%' + @text + '%') or (HoTen like '%' + @text + '%') and n.MaNV=l.MaNV";
+            string sql = "select *from NHANVIEN n,LUONG l where (l.MaNV like '%' + @text + '%') or (n.HoTen like '%' + @text + '%') and n.MaNV=l.MaNV";
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("text", nv);
             cmd.ExecuteNonQuery();

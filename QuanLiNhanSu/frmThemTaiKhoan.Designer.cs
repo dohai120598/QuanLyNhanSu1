@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.btnThemMoi = new DevComponents.DotNetBar.ButtonX();
             this.txtNhapLai = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMK = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTenDN = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -38,9 +41,6 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.Tên = new DevComponents.DotNetBar.LabelX();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.btnThemMoi = new DevComponents.DotNetBar.ButtonX();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,35 @@
             this.groupBox1.Size = new System.Drawing.Size(442, 312);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::QuanLiNhanSu.Properties.Resources.cancel1;
+            this.buttonX1.Location = new System.Drawing.Point(273, 227);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(102, 36);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 20;
+            this.buttonX1.Text = "Thoát";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.Image = global::QuanLiNhanSu.Properties.Resources.login;
+            this.labelX5.Location = new System.Drawing.Point(116, 19);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(259, 48);
+            this.labelX5.TabIndex = 11;
+            this.labelX5.Text = "ĐĂNG KÍ TÀI KHOẢN";
             // 
             // labelX1
             // 
@@ -75,6 +104,20 @@
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(185, 23);
             this.labelX1.TabIndex = 19;
+            // 
+            // btnThemMoi
+            // 
+            this.btnThemMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThemMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThemMoi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMoi.Image = global::QuanLiNhanSu.Properties.Resources.button_plus_red1;
+            this.btnThemMoi.Location = new System.Drawing.Point(147, 227);
+            this.btnThemMoi.Name = "btnThemMoi";
+            this.btnThemMoi.Size = new System.Drawing.Size(102, 36);
+            this.btnThemMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThemMoi.TabIndex = 18;
+            this.btnThemMoi.Text = "Đăng Kí";
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click_1);
             // 
             // txtNhapLai
             // 
@@ -172,48 +215,6 @@
             this.Tên.Size = new System.Drawing.Size(101, 23);
             this.Tên.TabIndex = 10;
             this.Tên.Text = "Mã Nhân Viên";
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Image = global::QuanLiNhanSu.Properties.Resources.cancel1;
-            this.buttonX1.Location = new System.Drawing.Point(273, 227);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(102, 36);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 20;
-            this.buttonX1.Text = "Thoát";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
-            // labelX5
-            // 
-            // 
-            // 
-            // 
-            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX5.Image = global::QuanLiNhanSu.Properties.Resources.login;
-            this.labelX5.Location = new System.Drawing.Point(116, 19);
-            this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(259, 48);
-            this.labelX5.TabIndex = 11;
-            this.labelX5.Text = "ĐĂNG KÍ TÀI KHOẢN";
-            // 
-            // btnThemMoi
-            // 
-            this.btnThemMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnThemMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnThemMoi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMoi.Image = global::QuanLiNhanSu.Properties.Resources.button_plus_red1;
-            this.btnThemMoi.Location = new System.Drawing.Point(147, 227);
-            this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(102, 36);
-            this.btnThemMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThemMoi.TabIndex = 18;
-            this.btnThemMoi.Text = "Đăng Kí";
-            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click_1);
             // 
             // frmThemTaiKhoan
             // 

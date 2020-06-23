@@ -18,7 +18,7 @@ namespace QuanLiNhanSu
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-UJHK73G\SQLEXPRESS;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-L72N3QU;Initial Catalog=QuanLyNhanSu1;Integrated Security=True");
 
         private void cboTimKiem_PB_Luong_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -76,8 +76,8 @@ namespace QuanLiNhanSu
         private void frmLuong_PB_Load(object sender, EventArgs e)
         {
            this.dgvLuong_pb.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-        //    this.pHONGBANTableAdapter.Fill(this.quanLyNhanSuDataSet.PHONGBAN);
-        //    dgvLuong_pb.DataSource = ConnectDatabase.GetAllLuong_PB();
+           //this.pHONGBANTableAdapter.Fill(this.quanLyNhanSuDataSet.PHONGBAN);
+           //dgvLuong_pb.DataSource = ConnectDatabase.GetAllLuong_PB();
 
         }
         public void load()

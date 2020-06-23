@@ -75,6 +75,11 @@ namespace QuanLiNhanSu
         {
 
         }
+
+        private void txtTenTp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
